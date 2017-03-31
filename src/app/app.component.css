@@ -81,13 +81,15 @@ body{
 }
 
 /*-------------MAIN Content--------------*/
+h1{
+    font-weight: bold;
+}
 main{
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     
-    background-color: #dae0ea;
 }
 /*NAVIGATION TOP BAR*/
 #topbar-wrapper{
@@ -129,12 +131,11 @@ main{
 }
 /*-------Page Content------ */
 #page-content-wrapper{
-    border:1px solid black;
     margin: 2em;
 }
 .box{
-    border: 2px solid red;
     background-color: #f9f9f9;
+    border-radius: 2px;   
     height: 350px;
      margin-bottom: 2em;
     
