@@ -1,9 +1,10 @@
 
 /* NAVIGATION SIDE BAR*/
+body{
+    bottom: 0;
+}
 #sidebar-wrapper{
-    background-color: #222947;
-    -webkit-align-self: flex-start;
-    align-self: stretch;
+    background-color: #222947; 
     width: 250px;
     height: 100%;
     position: fixed;
@@ -70,13 +71,6 @@
 }
 
 @media (min-width: 768px) {
-/*
-    .main {
-        flex-flow: wrap;
-        display: flex;
-        justify-content: space-between;
-        justify-content: space-around;
-    }*/
     main{
         margin-left: 250px;
     }
@@ -92,6 +86,8 @@ main{
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    
+    background-color: #dae0ea;
 }
 /*NAVIGATION TOP BAR*/
 #topbar-wrapper{
@@ -101,6 +97,81 @@ main{
 #left-topbar .fa-search{
  margin-left:10px;
 }
+
 #topbar-collapse-button{
     margin-bottom: 0px;
+}
+
+#add-project-btn h4{
+ font-size: small;
+}
+
+.navbar-right li {
+    margin-right: 1.5em;
+}
+.navbar-right li a{
+    padding: 0px;
+}
+#letter-icon{
+    font-size: 2em;
+}
+
+#add-project-btn{/*add project button*/
+
+    background-color: #4286f4;
+    color: white;
+    border: 1px solid #4286f4;
+
+    border-radius: 30px;   
+    padding: 5px,10px;
+    margin-right: 3em;
+
+}
+/*-------Page Content------ */
+#page-content-wrapper{
+    border:1px solid black;
+    margin: 2em;
+}
+.box{
+    border: 2px solid red;
+    background-color: #f9f9f9;
+    height: 350px;
+     margin-bottom: 2em;
+    
+}
+@media (min-width: 920px) {
+.flex-up-container, .flex-bottom-container{
+    display: flex;
+   
+}
+.flex-up-container{
+    justify-content: space-between;
+}
+.flex-bottom-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bottom-box{
+    width: 320px;
+}
+}
+
+
+#up-box-1{
+    flex-basis: 40%
+}
+#up-box-2{
+    flex-basis:55%
+
+}
+/*makes the images in boxes be in center*/
+.up-box{
+    display: flex;
+}
+img{
+    margin: auto;   
+}
+/*-------------*/
+.flex-bottom-container{
+    
 }
