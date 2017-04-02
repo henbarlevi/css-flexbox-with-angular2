@@ -1,22 +1,3 @@
-
-
-/*-------------MAIN Content--------------*/
-@media (min-width: 768px) {
-    main{
-        margin-left: 250px;
-    }
-}
-
-
-main{
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    
-    
-}
-
 /*-------Page Content------ */
 h1{
     font-weight: bold;

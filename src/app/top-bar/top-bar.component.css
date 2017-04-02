@@ -1,0 +1,41 @@
+/*NAVIGATION TOP BAR*/
+#topbar-wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#left-topbar .fa-search{
+ margin-left:10px;
+}
+
+#topbar-collapse-button{
+    margin-bottom: 0px;
+}
+
+#add-project-btn h4{
+ font-size: small;
+}
+
+.navbar-right li {
+    margin-right: 1.5em;
+}
+.navbar-right li:nth-child(4){
+    margin-right: 0;
+}
+.navbar-right li a{
+    padding: 0px;
+}
+#letter-icon{
+    font-size: 2em;
+}
+
+#add-project-btn{/*add project button*/
+
+    background-color: #4286f4;
+    color: white;
+    border: 1px solid #4286f4;
+
+    border-radius: 30px;   
+    padding: 5px,10px;
+    margin-right: 3em;
+
+}

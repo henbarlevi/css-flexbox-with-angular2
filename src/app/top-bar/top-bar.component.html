@@ -1,0 +1,38 @@
+   <!--topbar wrapper-->
+    <nav class="navbar navbar-default" id="topbar-wrapper">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button"  id="topbar-collapse-button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+          <div id="left-topbar">
+            <span class="fa fa-caret-left" style="color:#2aabd2;font-size: 20px;"></span>
+            <span class="glyphicon glyphicon-menu-hamburger" (click)="onToggle()"></span>
+            <span class="fa fa-search" style="font-size: 20px;"></span>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="btn btn-default" id="add-project-btn">
+              <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus"></span>Add Project</h4>
+            </li>
+            <li><span id="letter-icon" class="glyphicon glyphicon-envelope" ng-click="mailTo()"></span></li>
+            <li>
+              <span class="fa fa-bell" style="font-size: 20px;">
+                            <span id="badge" class="badge">3</span>
+              </span>
+            </li>
+            <li>
+              <a href="https://github.com/henbarlevi"><img id="github-icon" src="http://www.oit.uci.edu/wp-content/uploads/Octocat.png" class="img-circle" alt="Cinque Terre"
+                  width="30" height="25"></a>
+            </li>
+            <li><span class="fa fa-caret-down" style="font-size: 20px;"></span></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/#top navbar wrapper-->

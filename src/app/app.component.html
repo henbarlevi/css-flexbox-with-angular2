@@ -1,90 +1,13 @@
 <div id="wrapper">
-
-  <!-- Sidebar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-    <ul id="list-sidebar">
-      <div id="title">
-        <h2><span class="fa fa-circle-o" style="color:#5899e2;"></span> Merkury</h2>
-      </div>
-      <li><span class="glyphicon glyphicon-home"></span> Home</li>
-      <li><span class="glyphicon glyphicon-align-justify"></span> Workflow</li>
-      <li><span class="fa fa-line-chart"></span> Statistics</li>
-      <li><span class="glyphicon glyphicon-calendar"></span> Calendar</li>
-      <li id="usersModal"><span class="glyphicon glyphicon-user"></span> Users</li>
-      <li><span class="glyphicon glyphicon-cog"></span> Settings</li>
-    </ul>
-  </nav>
-  <!-- /#sidebar-wrapper -->
+  <side-bar [menuState]="menuState"></side-bar>
+    
 
 
-  <main>
+  <main [@slideInOut]="menuState">
 
-    <!--topbar wrapper-->
-    <nav class="navbar navbar-default" id="topbar-wrapper">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" id="topbar-collapse-button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-
-          <div id="left-topbar">
-            <span class="fa fa-caret-left" style="color:#2aabd2;font-size: 20px;"></span>
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
-            <span class="fa fa-search" style="font-size: 20px;"></span>
-          </div>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-
-          <ul class="nav navbar-nav navbar-right">
-            <li class="btn btn-default" id="add-project-btn">
-              <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus"></span>Add Project</h4>
-            </li>
-            <li><span id="letter-icon" class="glyphicon glyphicon-envelope" ng-click="mailTo()"></span></li>
-            <li>
-              <span class="fa fa-bell" style="font-size: 20px;">
-                            <span id="badge" class="badge">3</span>
-              </span>
-            </li>
-            <li>
-              <a href="https://github.com/henbarlevi"><img id="github-icon" src="http://www.oit.uci.edu/wp-content/uploads/Octocat.png" class="img-circle" alt="Cinque Terre"
-                  width="30" height="25"></a>
-            </li>
-            <li><span class="fa fa-caret-down" style="font-size: 20px;"></span></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--/#top navbar wrapper-->
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <h1>Hello John</h1>
-      <!-- up boxes-->
-      <div class="flex-container flex-up-container">
-        <div class="box up-box" id="up-box-1">
-<img src="https://s3.amazonaws.com/cocoacontrols_production/uploads/control_image/image/10781/IMG_1279_03.37.18.PNG" style=" max-height: 100%; max-width: 100%">
-        </div>
-        <div class="box up-box" id="up-box-2">
-<img src="http://www.adsum.net/starthere/img/graph-img.png" style="max-height: 100%; max-width: 100%">
-        </div>
-      </div>
-      <!-- /#up boxes wrapper-->
-      <!-- bottom boxes-->
-      <div class="flex-container flex-bottom-container">
-        <div class="box bottom-box" id="bottom-box-1">
-
-        </div>
-        <div class="box bottom-box" id="bottom-box-2">
-
-        </div>
-        <div class="box bottom-box" id="bottom-box-3">
-
-        </div>
-      </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-
+    <top-bar (toggle)="onToggle()"></top-bar>
+ 
+    <home-page></home-page>
   </main>
 
 </div>
